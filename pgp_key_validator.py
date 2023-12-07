@@ -41,4 +41,5 @@ for id in pub_key.userids:
     # print('name: ', id.name)
     print('-------------------')
 
+#TODO: add checking on subkey
 
