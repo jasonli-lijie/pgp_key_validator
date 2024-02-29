@@ -24,5 +24,5 @@ def main(file_to_decrypt):
         output_file.write(decrypted_message.message)
 
 if __name__ == "__main__":
-    file_to_decrypt = '[FILE_TO_DECRYPT]'
+    file_to_decrypt = '[FILENAME_TO_DECRYPT]'
     main(file_to_decrypt)
