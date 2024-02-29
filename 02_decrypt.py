@@ -12,7 +12,7 @@ def main(file_to_decrypt):
     pri_key.parse(KEY_PRI)
     encrypted_file_message = pgpy.PGPMessage.from_file(file_to_decrypt) ## from me
     if pri_key.is_protected:
-        with pri_key.unlock(''):
+        with pri_key.unlock('[PRIVATE_KEY_PASSPHRASE]'):
             decrypted_message = pri_key.decrypt(encrypted_file_message)
     else:
         decrypted_message = pri_key.decrypt(encrypted_file_message)
